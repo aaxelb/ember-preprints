@@ -1069,7 +1069,7 @@ export default Ember.Controller.extend(Analytics, BasicsValidations, NodeActions
                 .then(() => {
                     this.transitionToRoute(
                         `${this.get('theme.isSubRoute') ? 'provider.' : ''}content`,
-                        this.get('model')
+                        this.get('model').reload()
                     );
                 })
                 .catch(() => {
