@@ -1004,7 +1004,7 @@ export default Ember.Controller.extend(Analytics, BasicsValidations, NodeActions
         /*
           Submit tab actions
          */
-        toggleSharePreprintModal() {
+        clickSubmit() {
             if (this.get('allSectionsValid')) {
                 // Toggles display of share preprint modal
                 Ember.get(this, 'metrics')

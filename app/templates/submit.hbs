@@ -235,7 +235,7 @@
                                 </p>
                             {{/if}}
                             {{#if canResubmit}}
-                                <button class="btn btn-success btn-md m-t-md pull-right" disabled={{unless allSectionsValid true}} {{action 'toggleSharePreprintModal'}}>
+                                <button class="btn btn-success btn-md m-t-md pull-right" disabled={{unless allSectionsValid true}} {{action 'clickSubmit'}}>
                                     {{t "submit.body.edit.resubmit_button"}}
                                 </button>
                                 <div>
@@ -270,7 +270,7 @@
                                     <p class="text-danger">{{unless authorsValid (t "global.authors")}}</p>
                                 </span>
                             {{/if}}
-                            <button class="btn btn-success btn-md m-t-md pull-right" disabled={{showValidationErrors}} {{action 'toggleSharePreprintModal'}}>
+                            <button class="btn btn-success btn-md m-t-md pull-right" disabled={{showValidationErrors}} {{action 'clickSubmit'}}>
                                 {{t buttonLabel}}
                             </button>
                             <button class="btn btn-default btn-md m-t-md pull-right" {{action 'cancel'}}>
